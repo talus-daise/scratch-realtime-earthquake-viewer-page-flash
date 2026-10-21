@@ -168,6 +168,22 @@
 		<meta name="twitter:title" content="リアルタイム地震ビューアー v1.6.3" />
 		<meta name="twitter:description" content="リアルタイムに地震関連情報を閲覧できるアプリです。気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。" />
 		<meta name="twitter:image" content="https://kotoho7.github.io/scratch-realtime-earthquake-viewer-page/images/ogp_image.webp" />
+		<script>
+			(function() {
+				// Mobile memory optimization: cap devicePixelRatio to prevent excessive WebGL VRAM allocation
+				var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) || ('ontouchstart' in window && window.innerWidth < 1024);
+				if (isMobile && window.devicePixelRatio > 1.5) {
+					try {
+						Object.defineProperty(window, 'devicePixelRatio', {
+							get: function() { return 1.5; },
+							configurable: true
+						});
+					} catch (e) {
+						console.warn('[Optimization] Could not cap devicePixelRatio:', e);
+					}
+				}
+			})();
+		</script>
 		<script type="module" crossorigin src="./index.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7WPBQ5B08"></script>
 	<script>
