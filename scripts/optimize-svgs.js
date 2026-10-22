@@ -14,8 +14,7 @@ const files = fs
   .map((f) => ({ name: f, size: fs.statSync(path.join(assetsDir, f)).size }))
   .sort((a, b) => b.size - a.size);
 
-// Optimize top map SVGs (or all if specified)
-const limit = process.env.LIMIT ? parseInt(process.env.LIMIT, 10) : 50;
+const limit = process.env.LIMIT ? parseInt(process.env.LIMIT, 10) : 15;
 const targetFiles = files.slice(0, limit);
 
 console.log(`Optimizing top ${targetFiles.length} largest SVG map assets in ${assetsDir}...`);
