@@ -32,9 +32,7 @@ self.addEventListener("fetch", (e) => {
 
   const matchPaths = ["/assets/", "/images/", "/index", "/manifest", "/hash"];
   const shouldCache =
-    url === basePath + "/" ||
-    url === basePath + "/index.html" ||
-    (matchPaths.some((p) => url.startsWith(basePath + p)) && !url.includes("/assets/project.json") && !url.endsWith(".mp3") && !url.endsWith(".wav"));
+    (url === basePath + "/" || url === basePath + "/index.html");
 
   if (!shouldCache || e.request.method !== "GET") {
     return;
