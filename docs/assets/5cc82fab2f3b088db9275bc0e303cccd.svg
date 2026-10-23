@@ -1,7 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 60" version="1.1" height="60" width="120">
- <rect style="paint-order:stroke markers fill" stop-color="#000000" opacity=".80769" fill="none" height="60" width="120"></rect>
- <g aria-label="-1" fill="#fff">
-  <path d="m61.025 18.479h4.6758v1.4014h-4.6758z"></path>
-  <path d="m70.801 24.427v-9.6592q-1.4492 0.48535-2.7344 0.71777l-0.33496-1.3877q2.167-0.52637 3.5547-1.2168h1.3125v11.546z"></path>
- </g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="60" viewBox="0 0 120 60"><path fill="none" d="M0 0h120v60H0z" opacity=".8" style="paint-order:stroke markers fill"/><path fill="#fff" d="M61 18.5h4.7v1.4H61zm9.8 5.9v-9.6q-1.4.5-2.7.7l-.4-1.4q2.2-.5 3.6-1.2h1.3v11.5z" aria-label="-1"/></svg>
