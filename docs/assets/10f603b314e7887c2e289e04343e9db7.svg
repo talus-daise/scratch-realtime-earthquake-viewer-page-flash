@@ -1,3 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 224 156" version="1.1" height="156" width="224">
- <rect stop-color="#000000" fill-rule="evenodd" fill="#f00" ry="0" rx="0" height="30" width="16" y="66" x="187.97"></rect>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="224" height="156" viewBox="0 0 224 156"><rect width="16" height="30" x="188" y="66" fill="red" fill-rule="evenodd" rx="0" ry="0"/></svg>

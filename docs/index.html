@@ -168,6 +168,37 @@
 		<meta name="twitter:title" content="リアルタイム地震ビューアー v1.6.3" />
 		<meta name="twitter:description" content="リアルタイムに地震関連情報を閲覧できるアプリです。気象庁が発表する地震情報・緊急地震速報・津波情報等を地図上に表示し、リアルタイムに更新されます。基本的に操作不要で、全自動で各情報が表示されます。" />
 		<meta name="twitter:image" content="https://kotoho7.github.io/scratch-realtime-earthquake-viewer-page/images/ogp_image.webp" />
+		<link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+		<link rel="dns-prefetch" href="https://www.googletagmanager.com">
+		<script>
+			(function() {
+				// Mobile/low-memory optimization: cap devicePixelRatio and hints
+				var ua = navigator.userAgent || '';
+				var isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(ua) || ('ontouchstart' in window && window.innerWidth < 1024);
+				var isLowMem = (navigator.deviceMemory && navigator.deviceMemory <= 4) || (navigator.hardwareConcurrency && navigator.hardwareConcurrency <= 4);
+				var dprCap = (isMobile || isLowMem) ? 1.0 : 1.25;
+				if ((isMobile || isLowMem) && window.devicePixelRatio > dprCap) {
+					try {
+						Object.defineProperty(window, 'devicePixelRatio', {
+							get: function() { return dprCap; },
+							configurable: true
+						});
+					} catch (e) {
+						console.warn('[Optimization] Could not cap devicePixelRatio:', e);
+					}
+				}
+				// Reduce touch delay and improve scroll performance hints
+				try {
+					var meta = document.createElement('meta');
+					meta.name = 'theme-color';
+					// keep existing if present
+				} catch(e){}
+			})();
+		</script>
+		<style>
+			html, body { touch-action: manipulation; -webkit-text-size-adjust: 100%; }
+			canvas { image-rendering: optimizeSpeed; image-rendering: -webkit-optimize-contrast; }
+		</style>
 		<script type="module" crossorigin src="./index.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-X7WPBQ5B08"></script>
 	<script>

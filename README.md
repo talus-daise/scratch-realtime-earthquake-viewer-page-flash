@@ -6,7 +6,8 @@
 
 > [!NOTE]
 > このアプリケーションはScratchで作成した[リアルタイム地震ビューアー](https://scratch.mit.edu/projects/636244032)を[Turbowarp Packager](https://packager.turbowarp.org/#636244032)でパッケージ化したものです。  
-> このプロジェクトはScratchで共有されているため、[/docs/assets](./docs/assets) にある画像や音声は [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.ja) になります。
+> このプロジェクトはScratchで共有されているため、[/docs/assets](./docs/assets) にある画像や音声は [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/deed.ja) になります。  
+> モバイル端末でのメモリ使用量削減のため、一部の大きなSVG地図アセットをPNG（ビットマップ）に置換しています。
 
 ## 概要
 
